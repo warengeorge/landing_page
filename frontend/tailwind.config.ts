@@ -7,14 +7,19 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    extend: {},
+    screens: {
+      sm: "800px",
+      md: "1024px",
+      lg: "1300px",
+      xl: "1440px",
+    },
+    colors: {
+      "header-footer": "rgb(33,145,251)",
+      "page": "rgba(255, 255, 255, 1)",
+      "red": "rgb(187,10,16)"
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
